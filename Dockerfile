@@ -1,11 +1,11 @@
 FROM httpd:latest
-#Versão base da Imagem
+#Base Image APACHE from DockerHub
 
 WORKDIR /usr/local/apache2/htdocs/
-#Diretório de trabalho da imagem
+#Work Diretory of Container
 
 COPY . /usr/local/apache2/htdocs/
-#Cópia dos arquivos
+#Copying files from source to Work Diretory
 
 EXPOSE 80
-#Liberação da porta
+#Port Opening
